@@ -16,6 +16,7 @@ function getLocation() {
     } else {
         statusAlert.innerHTML = "Geolocation is not supported by this browser.";
         statusAlert.style.backgroundColor = "red";
+        statusAlert.style.color = "white";
         gMapsLink.style.display = "none";
     }
 }
@@ -34,9 +35,11 @@ function showPosition(position) {
     if (insideISCC) {
         statusAlert.innerHTML = "You are inside ISCC area.";
         statusAlert.style.backgroundColor = "green";
+        statusAlert.style.color = "white";
     } else {
         statusAlert.innerHTML = "You are outside ISCC area.";
         statusAlert.style.backgroundColor = "yellow";
+        statusAlert.style.color = "black";
     }
     gMapsLink.style.display = "inline-block";
     gMapsLink.href = `https://www.google.com/maps/search/?api=1&query=${latitude}%2C${longitude}`;
