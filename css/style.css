@@ -1,0 +1,23 @@
+.container-fluid {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#coordinates {
+    font-size: 2em;
+}
+
+/* Styling for the Google Maps icon */
+#gmaps-link {
+    display: none;
+}
+
+#gmaps-link .icon {
+    font-size: 24px;
+    /* Adjust the size as needed */
+    vertical-align: middle;
+    margin-right: 5px;
+    /* Add some space between the icon and text */
+}
